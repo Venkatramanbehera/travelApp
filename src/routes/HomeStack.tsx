@@ -16,12 +16,13 @@ export const HomeStack = () => {
   return (
     <Stack.Navigator
       screenOptions={{
-        headerTitleAlign: 'center',
-        headerBackTitleVisible: false,
-        headerTintColor: 'green',
-        headerStyle: {
-          backgroundColor: 'yellow',
-        },
+        // headerTitleAlign: 'center',
+        headerShown: false,
+        // headerBackTitleVisible: false,
+        // headerTintColor: 'green',
+        // headerStyle: {
+        //   backgroundColor: 'yellow',
+        // },
       }}
       initialRouteName="Home">
       <Stack.Screen name="Home" component={Home} />

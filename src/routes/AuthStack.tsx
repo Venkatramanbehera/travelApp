@@ -4,8 +4,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Login from '../screens/Login';
 import Register from '../screens/Register';
 import ForgotPassword from '../screens/ForgotPassword';
-import BottomTab from './BottomTab';
-
+import DrawerNavigator from './DrawerNavigator';
 export type AppStackParamList = {
   Login: undefined;
   Register: undefined;
@@ -43,7 +42,7 @@ export const AuthStack = () => {
       />
       <Stack.Screen
         name="Home"
-        component={BottomTab}
+        component={DrawerNavigator}
         options={{
           headerShown: false,
         }}
